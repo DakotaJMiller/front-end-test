@@ -1,0 +1,551 @@
+/*FONTS*/
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url('/css/fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url('/css/fonts/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url('/css/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url('/css/fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url('/css/fonts/OpenSans-Italic.ttf');
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url('/css/fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url('/css/fonts/OpenSans-LightItalic.ttf');
+}
+
+/*CSS FOR HEADER AND SEARCH BOX */
+
+.title i{
+    padding-top: 10px;
+    color: #098FBB;
+    font-size: 35px;
+    
+}
+.title{
+    font-family: "OpenSans-Regular";
+    color: #098FBB;
+    font-size: 35px;
+}
+.main-col{
+  margin-bottom: 30px;
+}
+
+.search-col{
+    padding-top: 15px;
+    
+}
+.form-wrapper{
+  padding: 18px;
+  width: 430px;
+  height: 70px;
+  background-color:#F9F9F9;
+  position: relative;
+  border: 1px solid #D4D3D3;
+  
+}
+.form-wrapper select{
+    font-size: 15px;
+    font-family: "OpenSans-Regular";
+    width: 100px;
+    height: 35px;
+    outline: none;
+}
+
+.search-col button{
+    margin-left: 60px;
+    position: absolute;
+    margin-bottom: 60px;
+    background-color:#098FBB;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    font-family: "OpenSans-Regular";
+    width: 55px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+   
+}
+.form-wrapper input{
+    font-size: 15px;
+    font-family: "OpenSans-Regular";
+    width: 250px;
+    height: 35px;
+    outline: none;
+    padding: 10px;
+}
+.form-wrapper i{
+    font-size: 18px;
+    padding: 1px;
+}
+
+
+
+/*CSS FOR BUTTONS AND LINK*/
+
+.section-links{
+    padding-top: 30px;
+    background-color: #EFEFEF;
+    
+}
+.row-links hr{
+    width: 750px;
+    position: center; 
+    border: 1px solid #BCBCBC;;
+}
+
+
+.top-links{   
+    text-align: center;
+   
+}
+
+#styles button{
+    background-color: transparent;
+    font-family: "OpenSans-Regular";
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    color: #8A888F;
+    width: 10%;
+    height: 40px;
+    margin: 40px;
+}
+
+#styles button:hover{
+    color: #098FBB;
+}
+
+#styles button:focus{
+    background-color: #ffffff;
+    color: #098FBB;
+    border-radius: 5px;
+    border: 1px solid #E5E4E6;  
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: "OpenSans-Regular";   
+}
+
+.bot-links{
+    text-align: center;
+    
+}
+.bot-links button{
+     background-color: transparent;
+    font-family: "OpenSans-Regular";
+    font-size: 17px;
+    cursor: pointer;
+    color: #8A888F;
+    outline: none;
+    margin: 20px;
+}
+.bot-links button:hover{
+    color: #098FBB; 
+    background-color: transparent;
+}
+.bot-links button:focus{  
+    color: #098FBB;
+    background-color: transparent;  
+    font-size: 17px;
+    outline: none;
+    border: none;  
+    font-family: "OpenSans-Regular"
+}
+
+
+/*CSS for main SLIDER*/
+
+img{
+height: 750px;
+opacity: 0.9;
+width: 100%;
+
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+ 
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.text {
+  font-family: "OpenSans-Semibold";
+  font-size: 50px;
+  color: #EFEFEF;
+  padding: 8px 12px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.text h5{
+    font-family: "OpenSans-Italic";
+    font-size: 30px;
+    color: #EFEFEF;
+}
+
+.dots-bord{
+    background-color: #0E0E10;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    position: absolute;
+    opacity: .8;
+    text-align: center;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/*CSS FOR ABOUT US SECTION*/
+
+.about-header{
+    text-align: center;
+    padding: 40px;
+    font-family: "OpenSans-Bold";
+    margin-top: 80px;
+    color: #173B53;
+}
+#col p{
+    font-family: "OpenSans-Light";
+    font-size: 20px;
+    color: #000B2C;
+    line-height: 43px;
+    padding: 20px;
+    
+    
+}
+#col {
+margin-top: 50px;
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+justify-content: center;
+padding-left: 150px;
+padding-right: 150px;
+column-fill: balance;
+-moz-column-fill: balance;
+-webkit-column-fill: balance;
+}
+
+/*CSS FOR SERVICES*/
+
+.services-header{
+    text-align: center;
+    font-family: "OpenSans-Bold";
+    margin-top: 120px;
+    color: #173B53;
+    padding: 10px;
+}
+.services-col p{
+    font-family: "OpenSans-Light";
+    font-size: 20px;
+    color: #000B2C;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+
+/*CSS FOR SLIDER 2*/
+.carousel{
+    margin-top: 70px;
+    padding: 80px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image:none;
+}
+
+.carousel-control.left, .carousel-control.right i{
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #3D3C3C;
+  font-size: 100px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  
+
+}
+
+
+.img-responsive{
+	width:100%;
+	height:auto;
+    
+}
+.item img{
+    width: 150px;
+    height: 150px;
+    margin-left: 80px;
+}
+
+.thumbnail-info{
+    text-align: center;  
+}
+.thumbnail-info h3{
+    font-family: "OpenSans-Bold";
+    color: #173B53;
+    font-size: 23px;
+    padding: 10px;
+}
+.thumbnail-info p{
+    font-family: "OpenSans-Light";
+    font-size: 18px;
+    color: #000B2C;
+    text-align: center;
+}
+
+@media (min-width: 992px ) {
+	.carousel-inner .active.left {
+		left: -25%;
+	}
+	.carousel-inner .next {
+		left:  25%;
+	}
+	.carousel-inner .prev {
+		left: -25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px ) {
+	.carousel-inner .active.left {
+		left: -33.3%;
+	}
+	.carousel-inner .next {
+		left:  33.3%;
+	}
+	.carousel-inner .prev {
+		left: -33.3%;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+	.active > div:first-child + div {
+		display:block;
+	}
+	.active > div:last-child {
+		display:none;
+	}
+}
+
+@media (max-width: 767px) {
+	.carousel-inner .active.left {
+		left: -100%;
+	}
+	.carousel-inner .next {
+		left:  100%;
+	}
+	.carousel-inner .prev {
+		left: -100%;
+	}
+	.active > div {
+		display:none;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+}
+
+/*CSS FOR CONTACT US*/
+
+.contact-header{
+    text-align: center;
+    padding: 40px;
+    font-family: "OpenSans-Bold";
+    margin-top: 80px;
+    color: #173B53;
+    margin-bottom: 20px;
+}
+.form-style-1 label{
+    font-size: 15px;
+    font-family: "OpenSans-Semibold";
+    color: #173B53;
+    padding: 10px;
+    font-weight: normal; 
+}
+
+#option{
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    
+}
+
+.form-style-1 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+}
+.form-style-1 li {
+    padding: 0;
+    list-style: none;
+    margin: 10px;
+}
+#terms{
+    font-size: 15px;
+    padding: 10px;
+    font-family: "OpenSans-Semibold";
+    color: #173B53;
+    margin-top: 5px;
+}
+
+textarea {
+    border:1px solid #9FA0A1;
+    padding: 7px;
+    margin:0px;
+    outline: none;  
+    resize: none;
+}
+#terms-box{
+    width: 16px;
+    height: 16px;
+}
+#send-btn{
+    background-color:#098FBB;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    font-family: "OpenSans-Regular";
+    margin-bottom: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+}
+.form-style-1 .field-divided{
+    width: 100%;
+    padding: 15px;
+    margin-bottom:5px;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+    padding: 15px;
+    margin-bottom:5px;
+}
+.form-style-1 .field-select{
+    width: 100%;
+    padding: 15px;
+    margin-bottom:5px;
+}
+.form-style-1 .field-textarea{
+    height: 200px;
+    width: 100%;
+    
+}
+
+.map-col{
+   padding-left: 50px;
+}
+.map-col h5{
+    font-size: 18px;
+    font-family: "OpenSans-Semibold";
+    color: #173B53;
+    padding-bottom: 10px;
+}
+.map-col p{
+    font-size: 16px;
+    font-family: "OpenSans-Regular";
+    color: #173B53; 
+    padding-bottom: 3px; 
+}
+.media button{
+    background-color: #8A888F;
+    border-radius: 90px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.section-contact{
+    padding-bottom: 90px;
+}
+.media a{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "OpenSans-Regular";
+}
+
+.media button:active,button:focus,button:hover{
+    background-color:#098FBB;
+    outline: none;
+}
+
+/*FOOTER CSS*/
+
+.section-row{
+    background-color: #173B53;
+    height: 100px;
+    width: 100%;
+}
+.footer-info{
+    font-size: 18px;
+    font-family: "OpenSans-Light";
+    color: #E8E7E7; 
+    padding-top: 40px;  
+}
+.footer-info a{
+    color: #E8E7E7;
+}
+#admin{
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 10px;
+}

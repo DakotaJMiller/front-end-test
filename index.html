@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front-end-test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
+</head>
+<body>
+
+<!--HEADER-->
+
+   <div class="section-header section">
+        <div class="container-main container-fluid">
+             <div class="main-col col-xs-offset-1 col-xs-11">
+                <div class="header-row row">
+                    <div class="header-col col-xs-offset-1 col-xs-5">
+                        <h3 class="title"><i class="fa fa-university"></i> Design Company</h3>
+                    </div>
+                    <div class="search-col col-xs-offset-1 col-xs-4">
+                        <form class="form-wrapper">
+                            <select id="items" onchange="changePlaceHolder()">
+                                <option class="selectors" value="Search in portfolio" selected>Portfolio</option>
+                                <option class="selectors" value="Search in blog">Blog</option>
+                            <input type="text" id="search" placeholder="Search in portfolio">
+                            <i id="portimg"></i>    
+                            <i id="blogimg"></i>            
+                            </select>
+                            <button type="submit" id="go">GO</button>
+                        </form>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--NAV-->
+
+    <div class="section-links section">
+        <div class="container-links container-fluid">
+            <div class="links-col col-xs-offset-2 col-xs-8">
+                <div class="row-links row">
+                    <div class="navbar top-links" id="styles">
+                        <button class="btn" id="home">Home</button>
+                        <button class="btn" id="about">About</button>
+                        <button class="btn" id="portfolio">Portfolio</button>
+                        <button class="btn" id="blog">Blog</button>  
+                        <button class="btn" id="contact">Contact</button>                      
+                    </div>
+                    <hr>
+                        <div id="homeinfo">
+                            <div class="navbar bot-links">
+                                <button class="btn btn-sub">Login</button>
+                                <button class="btn btn-sub">Sign Up</button>
+                                <button class="btn btn-sub">Partners</button>
+                                <button class="btn btn-sub">Projects</button>
+                                <button class="btn btn-sub">Campaigns</button>
+                            </div>
+                        </div>
+                        <div id="aboutinfo">
+                            <div class="navbar bot-links">
+                                <button class="btn btn-sub">History</button>
+                                <button class="btn btn-sub">Culture</button>
+                                <button class="btn btn-sub">Day-to-day</button>
+                                <button class="btn btn-sub">People</button>
+                            </div>
+                        </div>
+                        <div id="portinfo">
+                            <div class="navbar bot-links">
+                                <button class="btn btn-sub">Branding</button>
+                                <button class="btn btn-sub">Printing</button>
+                                <button class="btn btn-sub">Illustrations</button>
+                                <button class="btn btn-sub">Packaging</button>
+                                <button class="btn btn-sub">Video</button>
+                                <button class="btn btn-sub">Campaigns</button>
+                            </div>
+                        </div>
+                        <div id="bloginfo">
+                            <div class="navbar bot-links">
+                                <button class="btn btn-sub">Bob's Blog</button>
+                                <button class="btn btn-sub">Tim's Blog</button>
+                                <button class="btn btn-sub">Jenny's Blog</button>
+                                <button class="btn btn-sub">Veronica's Blog</button>
+                                <button class="btn btn-sub">Team Blog</button>
+                            </div>
+                        </div>
+                        <div id="contactinfo">
+                            <div class="navbar bot-links">
+                                <button class="btn btn-sub">Career</button>
+                                <button class="btn btn-sub">Location</button>
+                                <button class="btn btn-sub">Offices</button>
+                                <button class="btn btn-sub">Email</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--SLIDESHOW-->
+
+    <div class="section section-slider">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="css/images/image-1.jpg">
+                <div class="text">" The best preparation for tomorrow<br> is doing your best today "
+                    <br><h5>-H. Jackson Brown Jr.</h5>
+                </div>
+            </div>
+            <div class="mySlides">
+                <img src="css/images/image-2.jpg">
+                <div class="text">" Try to be a rainbow in someone's cloud "
+                    <br><h5>-Maya Angelon</h5>
+                </div>
+            </div>
+            <div class="mySlides">
+                <img src="css/images/image-3.jpg">
+                <div class="text">" If opportunity doesn't knock,<br> build a door "
+                    <br><h5>-Milton Berle</h5>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="dots-bord">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+    </div>
+    <br><br><br>
+
+<!--ABOUT US -->
+
+    <div class="section about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="about-header"> ABOUT US </h1>
+                    <div id="col"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tellus tincidunt, lacinia ante non, porta nunc. Duis eget ligula orci. Duis consectetur dui quis lacus blandit, vel dignissim augue vehicula. Duis ac ultricies est, ut ultrices dui. Nulla         aliquam leo quis elementum finibus. Cras vel rhoncus lacus, quis malesuada nulla. Praesent rhoncus ante et metus lacinia, at tincidunt nisi sollicitudin. Sed lobortis urna sed libero feugiat pretium. Integer vestibulum hendrerit massa non dictum. Mauris imperdiet eros ac     augue faucibus, euismod consectetur quam convallis.<br>
+
+                        Nam maximus commodo purus. Integer vestibulum posuere est. Donec dapibus placerat lectus ac consectetur. Aenean at ultricies est, eleifend fermentum arcu. Nam molestie consequat feugiat. Vestibulum ullamcorper lorem mi, tempor euismod nunc finibus id. Nulla fermentum commodo placerat. Donec rhoncus dolor vitae egestas accumsan.<br>
+
+                        Maecenas vel sapien lobortis felis vulputate tincidunt. Sed euismod tellus molestie dictum lacinia. Pellentesque blandit ligula a pellentesque sollicitudin. Nulla facilisi. Aliquam porttitor sollicitudin justo, quis molestie ligula. Praesent et nunc congue, porta orci luctus, aliquam nisi. Etiam dictum molestie augue eu facilisis. Mauris in feugiat urna. Integer quis lectus vestibulum, sodales mauris eget, mollis lorem. Integer sed quam ac lectus dapibus mattis sed at arcu. Suspendisse ut accumsan neque. Nunc laoreet at augue vel posuere. Mauris vel cursus tellus.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="section services-section">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="services-header">SERVICES WE PROVIDE</h1>
+                    <div class="col-xs-offset-3 col-xs-6 services-col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tellus tincidunt, lacinia ante non, porta nunc. Duis eget ligula orci.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+  
+    <div class="container text-center">
+        <div class="carousel row" data-ride="carousel" data-type="multi" data-interval="false"  id="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="col-md-4 col-sm-5 col-xs-12"><a href="#"><img src="css/images/arrow.png" class="img-responsive"></a>
+                        <div class="thumbnail-info">
+                            <br>
+                            <h3>BRANDING</h3>
+                            <p>Sed euismod tellus molestie dictum lacinia. Pellentesque blandit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4 col-sm-5 col-xs-12"><a href="#"><img src="css/images/circle.png" class="img-responsive"></a>
+                        <div class="thumbnail-info">
+                            <br>
+                            <h3>DESIGN</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4 col-sm-5 col-xs-12"><a href="#"><img src="css/images/eye.png" class="img-responsive"></a>
+                        <div class="thumbnail-info">
+                            <br>
+                            <h3>DEVELOPMENT</h3>
+                            <p>Suspendisse nec tellus tincidunt, lacinia ante non, porta nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4 col-sm-5 col-xs-12"><a href="#"><img src="css/images/green.png" class="img-responsive"></a>
+                        <div class="thumbnail-info">
+                            <br>
+                            <h3>MARKETING</h3>
+                            <p>Etiam dictum molestie augue eu facilisis. Mauris in feugiat urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4 col-sm-5 col-xs-12"><a href="#"><img src="css/images/orange.png" class="img-responsive"></a>
+                        <div class="thumbnail-info">
+                            <br>
+                            <h3>ADVERTISING</h3>
+                            <p>Mauris in feugiat urna. Integer quis lectus vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" data-slide="next"><i class="fa fa-angle-left"></i></a>
+            <a class="right carousel-control" href="#carousel" data-slide="prev"><i class="fa fa-angle-right"></i></a> 
+        </div>
+    </div>
+
+    <br><hr>
+
+    <div class="section section-contact">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="contact-header"> GET IN TOUCH </h1>
+                <div class="col-xs-offset-3 col-xs-3 form-col">
+                    <form id="form-contain">                
+                        <ul class="form-style-1">
+                            <input id="option" type="radio" name="gender" checked><label> Mrs</label>
+                            <input id="option" type="radio" name="gender"><label> Ms</label>
+                            <input id="option" type="radio" name="gender"><label> Mr</label>                  
+                                <li><input type="text" name="field1" class="field-divided" placeholder="Your Name"></li>
+                                <li><input type="email" name="field3" class="field-long" placeholder="Your Email"></li>
+                                <li><textarea name="field5" id="field5" class="field-long field-textarea" placeholder="Your Message"></textarea></li>
+                            <div class="col-xs-6">
+                                <input id="terms-box" type="checkbox" value="terms" checked><label id="terms"> Agree with terms</label>
+                            </div>
+                            <div class="col-xs-6">
+                                <button id="send-btn" type="submit">SEND</button>
+                            </div>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-xs-3 map-col">
+                    <h5>Where you can find us</h5>
+            
+                        <p>1600 W Pennslyvania NW, Washington, DC 20500,</p>
+                        <p>United States of America</p>
+                        
+                        <p>T: (202) 153-8574</p>
+                        <P>M: (202) 157-5728</p>   
+                                         
+                    <div id="googleMap" style="width:400px;height:200px;"></div>
+                        <div class="media">
+                            <button><a href="#"><i class="fa fa-facebook"></a></i></button>
+                            <button><a href="#"><i class="fa fa-twitter"></a></i></button>
+                            <button><a href="#"><i class="fa fa-youtube"></a></i></button>
+                            <button><a href="#"><i class="fa fa-linkedin"></a></i></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-row">
+        <footer class="footer-info">
+            <div class="col-xs-offset-2 col-xs-4">
+                <p><i class="fa fa-copyright"></i> 2014. All rights reserved.</p>
+            </div>
+            <div class="col-xs-offset-2 col-xs-4">
+                <p><a href="#"><u>Admin Panel</u></a><i id="admin" class="fa fa-arrow-circle-right"></i></p>
+            </div>
+        </footer>
+    </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>
